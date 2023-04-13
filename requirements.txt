@@ -1,0 +1,10 @@
+geemap
+geopandas
+jupyter-server-proxy
+leafmap==0.18.10
+nbserverproxy
+owslib
+streamlit
+streamlit-leaflet
+numpy
+xarray
