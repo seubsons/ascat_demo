@@ -6,7 +6,7 @@ import numpy as np
 import netCDF4
 
 #infile = 'uhr_ascat_velocity.nc'
-ds = xr.open_dataset('uhr_ascat_velocity.nc')
+ds = xr.open_dataset('uhr_ascat_velocity.nc', decode_time=False)
 #st.write(ds)
 ##################################################################
 #st.set_page_config(layout="wide")
