@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 st.title("UHR ASCAT Coastal Winds")
 
 map_center=(29,-90)
-m = leafmap.Map(center=map_center, zoom=6, height='800px')
+m = leafmap.Map(center=map_center, zoom=6, height='800px', width='600px')
 
 m.add_basemap("HYBRID", show=False)
 m.add_basemap("Esri.WorldStreetMap", show=False)
