@@ -11,15 +11,16 @@ ds = xr.open_dataset(infile, engine='netcdf4')
 st.set_page_config(layout="wide")
 
 st.title("UHR ASCAT Coastal Winds")
+st.write(ds['u_wind'].data)
 
 map_center=(29,-90)
 m = leafmap.Map(center=map_center, zoom=5)
 
 # m.add_basemap("HYBRID", show=False)
 # m.add_basemap("Esri.WorldStreetMap", show=False)
-m.add_basemap('CartoDB.DarkMatter', show=False)
+#m.add_basemap('CartoDB.DarkMatter', show=False)
 
-m.add_velocity(ds, zonal_speed='u_wind', meridional_speed='v_wind')
+#m.add_velocity(ds, zonal_speed='u_wind', meridional_speed='v_wind')
 
 m.to_streamlit(height=700)
 
