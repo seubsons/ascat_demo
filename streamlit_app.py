@@ -5,8 +5,7 @@ import xarray as xr
 import numpy as np
 
 infile = 'uhr_ascat_velocity.nc'
-#ds = xr.open_dataset(infile, engine='netcdf4')
-ds = xr.open_dataset(infile, engine='h5netcdf')
+ds = xr.open_dataset(infile)
 
 ##################################################################
 st.set_page_config(layout="wide")
