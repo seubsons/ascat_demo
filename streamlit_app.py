@@ -4,7 +4,7 @@ import xarray as xr
 import numpy as np
 
 infile = 'uhr_ascat_velocity.nc'
-ds = xr.open_dataset(infile, decode_time=False)
+ds = xr.open_dataset(infile)
 
 ##################################################################
 st.set_page_config(layout="wide")
