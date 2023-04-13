@@ -13,5 +13,7 @@ st.title("UHR ASCAT Coastal Winds")
 map_center=(29,-90)
 m = leafmap.Map(center=map_center, zoom=5)
 m.add_velocity(ds, zonal_speed='u_wind', meridional_speed='v_wind')
-m.to_streamlit(height=700)
+
+st.pydeck_chart(m.to_pydeck(height=700))
+#m.to_streamlit(height=700)
 
