@@ -1,6 +1,6 @@
 import streamlit as st
-#import leafmap.foliumap as leafmap
-import leafmap.leafmap as leafmap
+import leafmap.foliumap as leafmap
+#import leafmap.leafmap as leafmap
 import xarray as xr
 import numpy as np
 
@@ -22,4 +22,5 @@ m.add_basemap('CartoDB.DarkMatter', show=False)
 
 m.add_velocity(ds, zonal_speed='u_wind', meridional_speed='v_wind')
 
-m.to_streamlit(height=700)
+#m.to_streamlit(height=700)
+m.to_streamlit()
