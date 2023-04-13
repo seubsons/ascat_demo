@@ -3,10 +3,10 @@ import leafmap.foliumap as leafmap
 #import leafmap.leafmap as leafmap
 import xarray as xr
 import numpy as np
-import netCDF4
+#import netCDF4
 
-#infile = 'uhr_ascat_velocity.nc'
-ds = xr.open_dataset('uhr_ascat_velocity.nc', decode_time=False)
+infile = 'uhr_ascat_velocity.nc'
+ds = xr.open_dataset(infile, decode_time=False)
 #st.write(ds)
 ##################################################################
 #st.set_page_config(layout="wide")
