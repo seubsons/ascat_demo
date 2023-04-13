@@ -15,11 +15,10 @@ st.title("UHR ASCAT Coastal Winds")
 map_center=(29,-90)
 m = leafmap.Map(center=map_center, zoom=6)
 
-m.add_velocity(ds, zonal_speed='u_wind', meridional_speed='v_wind')
-
 m.add_basemap("HYBRID", show=False)
 m.add_basemap("Esri.WorldStreetMap", show=False)
 m.add_basemap('CartoDB.DarkMatter', show=True)
 
+m.add_velocity(ds, zonal_speed='u_wind', meridional_speed='v_wind')
 
 m.to_streamlit(height=700)
