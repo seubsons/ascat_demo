@@ -1,6 +1,6 @@
 import streamlit as st
-#import leafmap.foliumap as leafmap
-import leafmap.leafmap as leafmap
+import leafmap.foliumap as leafmap
+#import leafmap.leafmap as leafmap
 import xarray as xr
 import numpy as np
 import netCDF4
