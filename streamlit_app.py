@@ -12,7 +12,6 @@ ds = xr.open_dataset(infile, engine='h5netcdf')
 st.set_page_config(layout="wide")
 
 st.title("UHR ASCAT Coastal Winds")
-st.write(ds['u_wind'].data)
 
 map_center=(29,-90)
 m = leafmap.Map(center=map_center, zoom=5)
