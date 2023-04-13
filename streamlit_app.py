@@ -1,5 +1,6 @@
 import streamlit as st
-import leafmap.foliumap as leafmap
+#import leafmap.foliumap as leafmap
+import leafmap.leafmap as leafmap
 import xarray as xr
 import numpy as np
 
@@ -17,7 +18,7 @@ m = leafmap.Map(center=map_center, zoom=6)
 
 m.add_basemap("HYBRID", show=False)
 m.add_basemap("Esri.WorldStreetMap", show=False)
-m.add_basemap('CartoDB.DarkMatter', show=True)
+m.add_basemap('CartoDB.DarkMatter', show=False)
 
 m.add_velocity(ds, zonal_speed='u_wind', meridional_speed='v_wind')
 
