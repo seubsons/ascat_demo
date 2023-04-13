@@ -1,15 +1,17 @@
 import streamlit as st
-import leafmap.foliumap as leafmap
+#import leafmap.foliumap as leafmap
 #import leafmap.leafmap as leafmap
+import leafmap
 import xarray as xr
 import numpy as np
 import netCDF4
 
 #infile = 'uhr_ascat_velocity.nc'
 ds = xr.open_dataset('uhr_ascat_velocity.nc')
-st.write(ds)
+#st.write(ds)
 ##################################################################
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
+st.set_page_config()
 
 # Customize page title
 st.title("UHR ASCAT Coastal Winds")
