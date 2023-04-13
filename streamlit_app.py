@@ -1,5 +1,6 @@
 import streamlit as st
-import leafmap.foliumap as leafmap
+#import leafmap.foliumap as leafmap
+import leafmap
 import xarray as xr
 
 infile = 'uhr_ascat_velocity.nc'
